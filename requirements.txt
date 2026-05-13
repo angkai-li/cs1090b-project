@@ -1,0 +1,41 @@
+# CS 1090B Milestone 4 - Python dependencies
+# Tested with Python 3.10-3.12 on macOS (Apple Silicon) and Linux x86_64.
+#
+# Install:  pip install -r requirements.txt
+#
+# All versions are pinned to what the original training run used,
+# so models / pickled caches load cleanly without numpy/torch ABI surprises.
+
+# --- Numerical & data ---
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.13.1
+scikit-learn==1.7.2
+
+# --- Plotting ---
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- Deep learning (HuggingFace ecosystem, Task 1 DeBERTa) ---
+torch==2.10.0
+transformers==5.6.2
+peft==0.19.1
+datasets==4.8.4
+accelerate==1.13.0
+huggingface-hub==1.8.0
+safetensors==0.7.0
+tokenizers==0.22.2
+
+# --- Change-point detection (Task 2 Route 1 PELT + ClaSP baseline) ---
+ruptures==1.1.10
+claspy==0.2.8
+
+# --- Sentiment (Task 1 baseline) ---
+vaderSentiment==3.3.2
+
+# --- Jupyter ---
+jupyterlab==4.5.6
+ipykernel==7.2.0
+
+# --- Time-series foundation model (Task 2 Route 4 MOMENT) ---
+momentfm==0.1.4
